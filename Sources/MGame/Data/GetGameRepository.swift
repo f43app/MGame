@@ -44,6 +44,9 @@ Transformer.Domain == CoreDomainModel {
         public func put(id: Int) -> AnyPublisher<CoreDomainModel, Error> {
             _localeDataSource.put(id: id)
         }
+        public func noted(id: Int) -> AnyPublisher<Noted, Error> {
+            _localeDataSource.noted(id: id)
+        }
 
         public func check(id: Int) -> AnyPublisher<Bool, Error> {
             _localeDataSource.check(id: id)
